@@ -14,8 +14,11 @@
 
   .card {
     background-color: #FFB9BB;
+    font-family:courier, courier new, serif;
+    color: #000;
   }
 
+
   body {
-    background-image: url("https://st3.depositphotos.com/4521519/14818/v/380/depositphotos_148189403-stock-illustration-smoothie-set-healthy-food-isolated.jpg");
+    background-color: #FFFFF6;
    }
