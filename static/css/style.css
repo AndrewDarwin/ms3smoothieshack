@@ -5,3 +5,8 @@
 .flashes h4 {
     line-height: 2;
 }
+
+.img_recipe {
+    max-width: 100%;
+    height: 250px;
+  }
