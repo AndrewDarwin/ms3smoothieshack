@@ -8,5 +8,14 @@
 
 .img_recipe {
     max-width: 100%;
-    height: 250px;
+    height: 300px;
+    width: 300px;
   }
+
+  .card {
+    background-color: #FFB9BB;
+  }
+
+  body {
+    background-image: url("https://st3.depositphotos.com/4521519/14818/v/380/depositphotos_148189403-stock-illustration-smoothie-set-healthy-food-isolated.jpg");
+   }

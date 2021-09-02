@@ -6,21 +6,23 @@
 </div>
 
 {% for recipe in recipes %}
-<div class="container recipe-card">
-    <div class="row s12">
-        <div class="col s12">
+<div class="card center-align">
+    <div class="col s12">
+
+            <div class="row s12"> </div>
             <h5>{{ recipe.recipe_name }}</h5>
         </div>
         <div class="col s12 m6"> 
             <img class="img_recipe" src="{{recipe.img_url}}" alt="recipe_image">
     </div>
+    <div class="row s12"></div>
         <div class="col s12 m6">
             <p><em>{{ recipe.user_id }}</em></p><br>
             <p><b>Category:</b> {{recipe.category_name}}</p>
             <p><b>Prep Time:</b> {{ recipe.prep_time }}</p>
+            <p><b>Serves:</b> {{ recipe.serves }}</p>
             <p><b>Description:</b> {{ recipe.description }}</p>
-        </div>
-    </div>
+        
     <div class="row s12">
         <div class="col s12 m6">
             <h5>Ingredients</h5>
