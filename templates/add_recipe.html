@@ -16,7 +16,7 @@
             <!-- Recipe name -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="recipe_name" name="recipe_name" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$" class="validate" required>
+                    <input id="recipe_name" name="recipe_name" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate" required>
                     <label for="recipe_name">Recipe name</label>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <!-- Description -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="description" name="description" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,20}$"  class="validate" required>
+                    <input id="description" name="description" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,100}$"  class="validate" required>
                     <label for="description">Description</label> </div>
             </div>
 
@@ -79,15 +79,16 @@
                     <span class="helper-text" data-error="wrong" data-success="right">Write each instruction on a new line.</span>
                 </div>
             </div>
-            <!-- Submit button -->
-            <div class="row">
-                <div class="col s11">
-                    <button type="submit" class="col s4 btn-small custom-btn">Add recipe</button>
-                    <a class = "col s3 btn-small custom-btn center-align" href="{{ url_for('profile', username=session['user'])  }}">cancel</a>
-                </div>
-                
+           <!-- submit button -->
+           <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large green darken-1 text-shadow">
+                    Add Recipe</i>
+                </button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
+
 
 {% endblock %}
