@@ -16,18 +16,24 @@
             <!-- Recipe name -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="recipe_name" name="recipe_name" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate" required>
+                    <input id="recipe_name" name="recipe_name" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" value="{{ recipe.recipe_name }}" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,50}$" class="validate" required>
                     <label for="recipe_name">Recipe name</label>
+                    <span class="helper-text" data-error="enter valid name" data-success="right"></span>
                 </div>
             </div>
             <!-- Category name -->
             <div class="row">
                 <div class="input-field col s11">
                     <select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose category</option>
+                        <option value="" disabled >Choose category</option>
                         {% for category in categories %}
-                            <option value="{{ category.category_name}}">{{ category.category_name}}</option>
-                        {% endfor %}
+                        {% if category.category_name == recipe.category_name %}
+                            <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                        {% else %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                    
                     </select>
                     <label for="category_name">Recipe category</label>
                 </div>
@@ -35,14 +41,16 @@
             <!-- Description -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="description" name="description" type="text" pattern="^[^\s][A-Za-z0-9\s]{1,100}$"  class="validate" required>
-                    <label for="description">Description</label> </div>
+                    <input id="description" name="description" pattern="^[^\s][A-Za-z0-9\s]{1,100}$" value="{{ recipe.description }}" type="text"  class="validate" required>
+                    <label for="description">Description</label> 
+                    <span class="helper-text" data-error="enter valid Description" data-success="right"></span>
+                </div>
             </div>
 
             <!-- Upload img URL -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="img_url" name="img_url" type="url" pattern="https?://.+"  class="validate" required>
+                    <input id="img_url" name="img_url" value="{{ recipe.img_url }}" type="url" pattern="https?://.+" class="validate" required> 
                     <label for="img_url">Image url</label>
                     <span class="helper-text" data-error="enter valid URL" data-success="right"></span>
                 </div>
@@ -50,7 +58,7 @@
             <!-- Serves -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="serves" name="serves" type="text"  pattern="^[1-9][0-9]*$" class="validate" required>
+                    <input id="serves" name="serves" value="{{ recipe.serves }}" type="text"  pattern="^[1-9][0-9]*$" class="validate" required>
                     <label for="serves">Number of serves</label>
                     <span class="helper-text" data-error="enter valid number" data-success="right">For example: 2</span>
                 </div>
@@ -58,7 +66,7 @@
             <!-- Preping time  -->
             <div class="row">
                 <div class="input-field col s11">
-                    <input id="prep_time" name="prep_time" type="text" pattern="^[1-9][0-9]*$" class="validate" required>
+                    <input id="prep_time" name="prep_time" value="{{ recipe.prep_time }}" type="text" pattern="^[1-9][0-9]*$" class="validate" required>
                     <label for="prep_time">Prep time (in minutes)</label>
                     <span class="helper-text" data-error="enter valid number" data-success="right">For example: 5</span>
                 </div>
@@ -66,7 +74,7 @@
             <!-- Ingredients  -->
             <div class="row">
                 <div class="input-field col s11">
-                    <textarea id="ingredients" name="ingredients" class="materialize-textarea validate" required></textarea>
+                    <textarea id="ingredients" name="ingredients" class="materialize-textarea validate" required>{{- recipe.ingredients -}}</textarea>
                     <label for="ingredients">Ingredients</label>
                     <span class="helper-text" data-error="wrong" data-success="right">Write each ingredient on a new line.</span>
                 </div>
@@ -74,7 +82,7 @@
             <!-- Instructions  -->
             <div class="row">
                 <div class="input-field col s11">
-                    <textarea id="instructions" name="instructions" class="materialize-textarea validate" required></textarea>
+                    <textarea id="instructions" name="instructions" class="materialize-textarea validate" required>{{- recipe.instructions -}}</textarea>
                     <label for="instructions">Instructions</label>
                     <span class="helper-text" data-error="wrong" data-success="right">Write each instruction on a new line.</span>
                 </div>
@@ -82,6 +90,10 @@
            <!-- submit button -->
            <div class="row">
             <div class="col s12 center-align">
+                 <!-- cancel button -->
+                 <a href="{{ url_for('get_recipes') }}" class="btn-large red text-shadow">
+                    Cancel 
+                </a>
                 <button type="submit" class="btn-large green darken-1 text-shadow">
                     Edit Recipe</i>
                 </button>
