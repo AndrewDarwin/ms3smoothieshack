@@ -22,3 +22,7 @@
   body {
     background-color: #FFFFF6;
    }
+
+   .btn-small {
+    margin: 5px;
+}
