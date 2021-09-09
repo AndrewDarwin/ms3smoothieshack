@@ -1,50 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="title-style">
-    <h4>Recipes</h4>
+<!-- Introduction -->
+<div class="row" id="image-header">
+    <div class="col s12 intro-text">
+        <h3 id="home-quote">Welcome to Smoothie Shack!</h3>
+        <h6 id="home-text">Enjoy our smoothie recipes and share your own</h6>
+    </div>
+</div>
+<!-- About -->
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h3 class="center-align">Smoothies are great!</h3>
+            <h5 class="center-align">
+                As well as being delicious, smoothies have several benefits, including 
+                increasing your consumption of fruits and vegetables and helping provide a 
+                nutritional balance of fats, protein, carbohydrates, vitamins, and minerals, 
+                providing a source of energy and protein. 
+            </h5>
+            <h5 class="center-align"> 
+                So whether it's strawberries, apples, bananas or dark leafy green vegetables, 
+                to name just a few, we have lots of recipes to get you started on your smoothie journey!
+            </h5>
+        </div>
+    </div>
 </div>
 
-{% for recipe in recipes %}
-<div class="card center-align">
+<!-- CTA to sign up -->
+<div class="row" id="black-row">
     <div class="col s12">
+        <h4 class="center-align">Create an account and share your recipes with us   <a href="{{ url_for('register') }}"  id="white-cta">Register here!</a></h4>
+    </div>
+</div>
 
-            <div class="row s12"> </div>
-            <h5>{{ recipe.recipe_name }}</h5>
-        </div>
-        <div class="col s12 m6"> 
-            <img class="img_recipe" src="{{recipe.img_url}}" alt="recipe_image">
-    </div>
-    <div class="row s12"></div>
-        <div class="col s12 m6">
-            <p><em>{{ recipe.user_id }}</em></p><br>
-            <p><b>Category:</b> {{recipe.category_name}}</p>
-            <p><b>Prep Time:</b> {{ recipe.prep_time }}</p>
-            <p><b>Serves:</b> {{ recipe.serves }}</p>
-            <p><b>Description:</b> {{ recipe.description }}</p>
-        
-    <div class="row s12">
-        <div class="col s12 m6">
-            <h5>Ingredients</h5>
-            <ul>
-                {% for list in recipe.ingredients.splitlines() %}
-                    <li>
-                        <p><i class="fas fa-circle"></i> {{list}}</p>    
-                    </li>
-                {% endfor %}
-            </ul> 
-        </div>
-        <div class="col s12 m6">
-            <h5>Instructions</h5>
-            <ol>
-                {% for steps in recipe.instructions.splitlines() %}
-                    <li>
-                        <p>{{steps}}</p>
-                    </li>
-                {% endfor %}
-            </ol> 
-        </div>
-    </div>
-   
-{% endfor %}
 {% endblock %}
