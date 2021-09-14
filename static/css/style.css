@@ -1,5 +1,5 @@
 .text-shadow {
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .flashes h4 {
@@ -14,7 +14,7 @@
 
   .card {
     background-color: #FFB9BB;
-    font-family:courier, courier new, serif;
+  
     color: #000;
   }
 
@@ -27,6 +27,7 @@
     margin: 5px;
 }
 
+
 /*------------------------------------- Homepage */
 #image-header {
   background: url("https://images.pexels.com/photos/775030/pexels-photo-775030.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
@@ -35,4 +36,19 @@
   min-height: 500px;
   width: 100%;
   padding: 15px;
+}
+
+.intro-text {
+  height: auto;
+  text-align: center;
+  color: white;
+   background-color: #0000CD;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.home-text {
+  height: auto;
+  text-align: center;
+  color: black;
+   background-color: white;
 }
