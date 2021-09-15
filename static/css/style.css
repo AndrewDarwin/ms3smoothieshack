@@ -1,3 +1,5 @@
+/*------------------------------------- General */
+
 .text-shadow {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -12,18 +14,18 @@
     width: 300px;
   }
 
-  .card {
+.card {
     background-color: #FFB9BB;
   
     color: #000;
   }
 
 
-  body {
+body {
     background-color: #FFFFF6;
    }
 
-   .btn-small {
+.btn-small {
     margin: 5px;
 }
 

@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <!-- top navbar -->
+        <!-- navbar -->
 		<nav class="nav-extended text-shadow green darken-2">
 			<div class="nav-wrapper">
 				<a href="{{ url_for('get_recipes') }}" class="brand-logo">Smoothie Shack</a>
@@ -60,7 +60,7 @@
             {% if messages %}
                 {% for message in messages %}
                     <div class="row flashes">
-                        <h4 class="green darken-2 center-align">{{ message }}</h4>
+                        <h4 class="center-align">{{ message }}</h4>
                     </div>
                 {% endfor %}
             {% endif %}
@@ -72,11 +72,11 @@
         {% endblock %}
     </main>
 
+        <!-- Footer -->
     <footer class="page-footer footer-col green darken-2">
         <div class="container">
-            © 2021 Copyright Andrew Darwin
-            
-        </div>
+            © 2021 Copyright Smoothie Shack
+            </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
