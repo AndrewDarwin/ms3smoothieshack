@@ -16,14 +16,15 @@
 
 .card {
     background-color: #FFB9BB;
-  
+    font-family: 'Lato', sans-serif;
     color: #000;
   }
 
 
 body {
     background-color: #FFFFF6;
-   }
+    font-family: 'Lato', sans-serif;
+}
 
 .btn-small {
     margin: 5px;
