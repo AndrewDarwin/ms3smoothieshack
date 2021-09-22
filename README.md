@@ -13,7 +13,7 @@ Users are welcome to create an account and add their smoothie recipes. If the us
 
 Mockup image taken from - https://techsini.com/multi-mockup 
 
-# User Experience (UX)
+# 1. User Experience (UX)
 
 * Constructing a full-stack site/app that uses HTML, CSS, JavaScript, Python+Flask and MongoDB.
 
@@ -78,3 +78,99 @@ Here below are some wireframes I created for Smoothie Shack;
 ![](assets/images/wireframes3.jpg) 
 
 ![](assets/images/wireframes4.jpg) 
+
+### Surface
+
+As the website is based on smoothies, I chose a green colour for the header and footer - this colour is synonymous with smoothies. I have chosen a night bright and stark colour in blue on the home page as the background for the introduction text, to draw in user’s eyes to the name of the site and what the site represents. I have designed the site with lots of colours that are similar to different smoothies, be it in the design, or the images that I have used. The colours are kept in harmony with the images - the hero image of the home page is one of a smoothie and some fruit - with lots of vibrant colour. The background of the recipes content is pink. Similarly, this colour was chosen because it is synonymous with smoothies. Non-text elements have alt text attributes (or the equivalent (eg role=“img” aria-label=“”) to cater for the visually impaired. I chose Lato as the font throughout, as it offers a beautiful font, and believe it fits nicely with the site. 
+
+### Database Model
+
+The project has three collections in the database. The database structure in MongoDB is as follows:
+
+![](assets/images/databasemodel.jpg) 
+
+# 2. Features
+
+### Design
+
+* A simple and consistent layout.
+
+* Clear navigation throughout the website by using the navigation bar.
+
+
+### General
+
+* The index page shows a hero image of a smoothie and fruit, as well as an introduction to the benefits of smoothies, and a call to action to either register or log in. 
+
+### Recipes
+
+* Recipes can be created, read, updated and deleted (CRUD) by the users.
+
+* Users can search for recipes with the search bar.
+
+* Users have access to their profile, with an overview of all their recipes.
+
+* Recipes include recipe Name, Category, Prep Time (minutes), Serves, Description, Ingredients and Instructions.
+
+### Signup, login and logout
+
+* Users can register to create a new account.
+
+* Users can login with existing account. 
+
+* User can easily log out.
+
+* If a user creates a new account, logs in or logs out, a flashed message will appear with the action the user has done.
+
+
+#  3. Technologies used
+
+## Languages used
+
+* HTML
+
+* CSS
+
+* Javascript
+
+* jQuery
+
+* Python
+
+## Frameworks, libraries & Other
+
+* Gitpod
+
+* Git
+
+* Github
+
+* Materilize
+
+* MongoDB
+
+* Heroku
+
+* Flask
+
+* Jinja
+
+* Werkzeug
+
+# 4. Testing
+
+* Chrome DevTools - to test responsiveness. App responding good on all devices.
+
+* W3C Markup Validation Service - to check for errors in HTML code. No errors found.
+
+![](assets/images/htmlcodechecker.jpg) 
+
+* W3C CSS validator - to check for errors in CSS code. No errors found.
+
+![](assets/images/csscodechecker.jpg) 
+
+* JShint - to check for errors in Javascript code. No errors found.
+
+![](assets/images/jscodechecker.jpg) 
+
+* PEP8 - to check for errors in Python code. No errors found.
