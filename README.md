@@ -177,7 +177,7 @@ The project has three collections in the database. The database structure in Mon
 
 ## Testing User Stories from User Experience (UX) Section
 
-# First-time visitor goals
+### First-time visitor goals
 
 * As a first time visitor, I want to be able to navigate easily through the website, so I can find everything easily.
 
@@ -207,7 +207,7 @@ The first time visitor can navigate to the Register page in the top navbar to re
 
 The first time visitor can visit the website on desktop, laptop, tablet and mobile phone.
 
-# Registered User goals:
+### Registered User goals:
 
 All the goals of first-time visitors also apply for registered users. There are additional user stories to the site members because they have more access to the website (when logged in).
 
@@ -243,3 +243,113 @@ A registered user can login by clicking on the Log In page at the top navbar on 
 
 If a registered user is logged in they can logout by clicking on the Logout page at the top navbar.
 
+# 5. Deployment
+
+## Requirements
+
+* Python3
+
+* Github account
+
+* MongoDB account
+
+* Heroku account
+
+## Clone the project
+
+### To make a local clone, follow the following steps.
+
+Log in to GitHub and go to the repository.
+
+Click on the green button with the text “Code”.
+
+Click on “Open with GitHub Desktop” and follow the prompts in the GitHub Desktop Application
+
+### Working with the local copy
+
+Install all the requirements: Go to the workspace of your local copy. In the terminal window of your IDE type: pip3 install -r requirements.txt.
+
+Create a database in MongoDB
+
+Signup or login to your MongoDB account.
+
+Create a cluster and a database.
+
+Create 3 collections in the db: categories, recipes, users.
+
+Add string values for the collections. See my database model of how I set up the database for this project.
+
+Create the environment variables
+
+Create a .gitignore file in the root directory of the project.
+
+Add the env.py file in the .gitignore.
+
+Create the file env.py. This will contain all the envornment variables.
+
+Import os
+os.environ.setdefault("IP", "Added by developer")
+os.environ.setdefault("PORT", "Added by developer")
+os.environ.setdefault("SECRET_KEY", "Added by developer")
+os.environ.setdefault("MONGO_URI", "Added by developer")
+os.environ.setdefault("MONGO_DBNAME", "Added by developer")
+
+Run the app: Open your terminal window in your IDE. Type python3 app.py and run the app.
+
+### Heroku Deployment
+
+Set up local workspace for Heroku
+
+In terminal window of your IDE type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
+
+In terminal window of your IDE type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
+
+Set up Heroku: create a Heroku account and create a new app and select your region.
+Deployment method 'Github'
+
+Click on the Connect to GitHub section in the deploy tab in Heroku.
+
+Search your repository to connect with it.
+
+When your repository appears click on connect to connect your repository with the Heroku.
+
+Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.
+
+Enter the variables contained in your env.py file. it is about: IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+
+Push the requirements.txt and Procfile to repository.$ git add requirements.txt
+$ git commit -m "Add requirements.txt"
+
+$ git add Procfile 
+$ git commit -m "Add Procfile"
+
+Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+
+Heroku will receive the code from Github and host the app using the required packages. Click on Open app in the right corner of your Heroku account. The app wil open and the live link is available from the address bar.
+http://smoothieshack.herokuapp.com/ 
+
+# 6. Credits
+
+## Recipes
+
+All recipes taken from https://www.bbcgoodfood.com/recipes/collection/smoothie-recipes 
+
+## Media 
+
+The images I used are from different sources. The hero image on the home page is from Pexels. All images used for the recipes are from https://www.bbcgoodfood.com/recipes/collection/smoothie-recipes
+
+## Code
+
+The site was built using Materialize. I used Materialize documentation to help me construct various parts of my code. 
+
+I also used Code Institute course material to assist me in writing code, particularly the Task Manager mini project run through. 
+
+I was inspired by, and used other Code Institute students MS3 projects including https://ms3-breaktasty.herokuapp.com/ and https://recipe-nation.herokuapp.com/ to assist in creating the code for the Recipes page of the site. 
+
+## Content
+
+All content used for the recipes is from https://www.bbcgoodfood.com/recipes/collection/smoothie-recipes
+
+# 7. Acknowledgements
+
+Thanks to my Mentor Antonio for continuous helpful feedback.
