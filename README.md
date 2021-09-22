@@ -174,3 +174,72 @@ The project has three collections in the database. The database structure in Mon
 ![](assets/images/jscodechecker.jpg) 
 
 * PEP8 - to check for errors in Python code. No errors found.
+
+## Testing User Stories from User Experience (UX) Section
+
+# First-time visitor goals
+
+* As a first time visitor, I want to be able to navigate easily through the website, so I can find everything easily.
+
+The first time visitor can navigate through the website with the navbar. The site has been designed to be fluid and easy to navigate. At the top there is a clean navigation bar, each link describes what section of the site they will end up at clearly. For the mobile visitors there is a hamburger menu.
+
+![](assets/images/site1.jpg) 
+
+* As a first time visitor, I want to see all site recipes, so I can be inspired by all recipes.
+
+The first time visitor can visit all recipes on the site by clicking on the Recipes page, and scrolling down the page to view all of the recipes uploaded.
+
+![](assets/images/site2.jpg) 
+
+* As a first time visitor, I want to be able to browse and search for recipes based on words, so I can find recipes easily. (For example, I can search the word banana and all recipes with the ingredient banana or banana in the recipe name will appear.)
+
+On the recipes pages there is a searchbar, where first time visitors can search for words. The search is based on the recipe name or the ingredients.
+
+![](assets/images/site3.jpg) 
+
+* As a first time visitor, I want to register an account on the website, so I can share my recipes on Smoothie Shack.
+
+The first time visitor can navigate to the Register page in the top navbar to register an account. There is also a CTA on the home page to register an account. 
+
+![](assets/images/site4.jpg) 
+
+* As a first time visitor, I want to be able to visit the website on every device, so that I can look at the website on desktop, mobile and tablet.
+
+The first time visitor can visit the website on desktop, laptop, tablet and mobile phone.
+
+# Registered User goals:
+
+All the goals of first-time visitors also apply for registered users. There are additional user stories to the site members because they have more access to the website (when logged in).
+
+* As a registered user, I want to add my recipes, so I can share my recipes on the site.
+
+Registered users can add recipes by clicking on the Add Recipe page, and then filling in the form with their recipe details. 
+
+![](assets/images/site5.jpg)
+
+* As a registered user, I want to be able to view my recipes that I’ve submitted to the site
+
+A registered user can view their recipes by clicking on the Profile page, where they’ll see all of their created recipes. 
+
+![](assets/images/site6.jpg)
+
+* As a registered user, I want to edit my recipes, so I can update information in the recipe.
+
+A registered user has a profile page. On the Profile page, there is an overview of all recipes made by the user. Above each recipe there is an edit button. If the site member clicks on the edit button they will navigate to the edit recipe form, where they can edit their recipe by editing the form. This edit function is also available on the Recipes page for the option to edit the user’s recipes. 
+
+![](assets/images/site7.jpg)
+
+* As a registered user, I want to delete my recipes, so I can remove the recipe for whatever reason.
+
+A registered user can delete a recipe on the Profile page. There is an overview of all recipes by the user on the profile page. There is a button above each recipe, to delete the recipe. This delete function is also available on the Recipes page for the option to delete the user’s recipes.
+
+* As a registered user, I want to login to my profile, so I have access to my recipes.
+
+A registered user can login by clicking on the Log In page at the top navbar on the website.
+
+![](assets/images/site8.jpg)
+
+* As a registered user, I want to be able to logout of my profile.
+
+If a registered user is logged in they can logout by clicking on the Logout page at the top navbar.
+
