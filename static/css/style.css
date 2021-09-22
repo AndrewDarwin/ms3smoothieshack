@@ -55,3 +55,15 @@ body {
   color: black;
    background-color: white;
 }
+
+@media only screen and (max-width: 420px) {
+  nav .brand-logo {
+    font-size: large;
+  }
+  #image-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: top;
+  }
+}
