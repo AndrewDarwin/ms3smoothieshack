@@ -56,6 +56,13 @@ body {
    background-color: white;
 }
 
+.home-text2 {
+  height: auto;
+  text-align: center;
+  color: black;
+   background-color: white;
+}
+
 @media only screen and (max-width: 420px) {
   nav .brand-logo {
     font-size: large;
