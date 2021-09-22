@@ -17,6 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 def index():
     recipes = list(mongo.db.recipes.find())
@@ -24,6 +25,7 @@ def index():
     mob_recipes = [recipes[0], recipes[1], recipes[3]]
     return render_template(
         "index.html", recipes=recipes, mob_recipes=mob_recipes)
+
 
 @app.route("/")
 @app.route("/get_recipes")
