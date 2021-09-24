@@ -179,6 +179,10 @@ Add Recipe page
 
 ![](assets/images/htmlcodechecker-addrecipe.jpg) 
 
+Edit Recipe page
+
+![](assets/images/htmlcodechecker-editrecipe.jpg) 
+
 * W3C CSS validator - to check for errors in CSS code. No errors found.
 
 ![](assets/images/csscodechecker.jpg) 
