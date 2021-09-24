@@ -161,9 +161,19 @@ The project has three collections in the database. The database structure in Mon
 
 * Chrome DevTools - to test responsiveness. App responding good on all devices.
 
-* W3C Markup Validation Service - to check for errors in HTML code. No errors found.
+* W3C Markup Validation Service - to check for errors in HTML code. Ran a check across all HTML pages, using a method of either Validate by URI or Validate by direct input. No errors found. 
 
-![](assets/images/htmlcodechecker.jpg) 
+Home page
+
+![](assets/images/htmlcodechecker-home.jpg) 
+
+Recipes page
+
+![](assets/images/htmlcodechecker-recipes.jpg) 
+
+Profile page
+
+![](assets/images/htmlcodechecker-profile.jpg) 
 
 * W3C CSS validator - to check for errors in CSS code. No errors found.
 
