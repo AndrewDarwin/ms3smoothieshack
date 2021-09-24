@@ -101,7 +101,8 @@ def profile(username):
     user_recipes = mongo.db.recipes.find({"created_by": username})
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username, user_recipes=user_recipes)
+    return render_template/
+    ("profile.html", username=username, user_recipes=user_recipes)
 
     return redirect(url_for("login"))
 
@@ -155,7 +156,8 @@ def edit_recipe(recipe_id):
     
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template/
+    ("edit_recipe.html", recipe=recipe, categories=categories)
 
 
 @app.route("/delete_recipe/<recipe_id>")
