@@ -185,6 +185,8 @@ Profile page
 
 * PEP8 - to check for errors in Python code. No errors found.
 
+![](assets/images/pythoncodechecker.jpg) 
+
 ## Testing User Stories from User Experience (UX) Section
 
 ### First-time visitor goals
