@@ -187,6 +187,10 @@ Login page
 
 ![](assets/images/htmlcodechecker-login.jpg) 
 
+Register page
+
+![](assets/images/htmlcodechecker-register.jpg) 
+
 * W3C CSS validator - to check for errors in CSS code. No errors found.
 
 ![](assets/images/csscodechecker.jpg) 
