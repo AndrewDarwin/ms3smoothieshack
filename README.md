@@ -112,7 +112,7 @@ The project has three collections in the database. The database structure in Mon
 
 * Recipes include recipe Name, Category, Prep Time (minutes), Serves, Description, Ingredients and Instructions.
 
-### Signup, login and logout
+### Security features
 
 * Users can register to create a new account.
 
@@ -122,6 +122,7 @@ The project has three collections in the database. The database structure in Mon
 
 * If a user creates a new account, logs in or logs out, a flashed message will appear with the action the user has done.
 
+* For security, if a user name or password is submitted incorrectly when attempting to login, a flash message appears stating - Incorrect Username and/or Password.
 
 #  3. Technologies used
 
