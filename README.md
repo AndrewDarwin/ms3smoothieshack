@@ -183,6 +183,10 @@ Edit Recipe page
 
 ![](assets/images/htmlcodechecker-editrecipe.jpg) 
 
+Login page
+
+![](assets/images/htmlcodechecker-login.jpg) 
+
 * W3C CSS validator - to check for errors in CSS code. No errors found.
 
 ![](assets/images/csscodechecker.jpg) 
