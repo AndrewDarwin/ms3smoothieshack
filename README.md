@@ -175,6 +175,10 @@ Profile page
 
 ![](assets/images/htmlcodechecker-profile.jpg) 
 
+Add Recipe page
+
+![](assets/images/htmlcodechecker-addrecipe.jpg) 
+
 * W3C CSS validator - to check for errors in CSS code. No errors found.
 
 ![](assets/images/csscodechecker.jpg) 
