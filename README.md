@@ -200,10 +200,6 @@ Register page
 
 ![](assets/images/jscodechecker.jpg) 
 
-* PEP8 - to check for errors in Python code. No errors found.
-
-![](assets/images/pythoncodechecker.jpg) 
-
 ## Testing User Stories from User Experience (UX) Section
 
 ### First-time visitor goals
@@ -288,7 +284,27 @@ As a registered user, I tested all of the CRUD functions, which all worked well.
 
 I successfully uploaded and tested recipes to the site directly from the Mongodb database named smoothie_shack in the recipes collection;
 
+![](assets/images/testing-mongodb.jpg)
 
+* PEP8 - to check for errors in Python code. PEP8 Heroku bug issue.
+
+When testing the app.py file through the PEP8 validator, it found 2 errors within the code, as you can see in the screenshot below;
+
+![](assets/images/pep8herokubug1.jpg)
+
+I fixed the errors, and ran it through the PEP8 validator again, as you can see below;
+
+![](assets/images/pep8herokubug2.jpg)
+
+I then fixed the errors in my app.py file, and although when I saved, everything was working well locally, when I commited and pushed the code, and ran the app through heroku, the app would no longer run, and showed the following on screen;
+
+![](assets/images/pep8herokubug3.jpg)
+
+To test, I navigated to my heroku dashboard, and in the logs was the following;
+
+![](assets/images/pep8herokubug4.jpg)
+
+After speaking with my mentor Antonio, his advice was to return the code into the app.py that was running the 2 errors displaying in the PEP8 validator, and to flag the issue as a bug. To reiterise, you will see these errors on the validator; when I correct them locally it works ok, but when I push to heroku, it says invalid syntax. It is a format error that I tried to solve which I am flagging as a bug.
 
 # 5. Deployment
 
