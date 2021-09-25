@@ -272,6 +272,24 @@ A registered user can login by clicking on the Log In page at the top navbar on 
 
 If a registered user is logged in they can logout by clicking on the Logout page at the top navbar.
 
+## Manual Test Procedures
+
+Manual test procedures to assess functionality, usability, responsiveness and data management within the Full Stack web application include;
+ 
+* Testing all pages.
+
+I successfully created an account, by registering as a user. I then logged in with my user name and password. 
+
+I manually tested all pages of the site, as a non registered user, and as a user.
+
+As a registered user, I tested all of the CRUD functions, which all worked well. I added recipes, and then from my profile page, I both tested the edit recipe function, and delete recipe function which worked correctly. Finally, I successfully tested the logout function, and logged out of my profile.
+
+* Testing the data from MongoDB
+
+I successfully uploaded and tested recipes to the site directly from the Mongodb database named smoothie_shack in the recipes collection;
+
+
+
 # 5. Deployment
 
 ## Requirements
