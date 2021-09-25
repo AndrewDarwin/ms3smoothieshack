@@ -296,15 +296,15 @@ I fixed the errors, and ran it through the PEP8 validator again, as you can see 
 
 ![](assets/images/pep8herokubug2.jpg)
 
-I then fixed the errors in my app.py file, and although when I saved, everything was working well locally, when I commited and pushed the code, and ran the app through heroku, the app would no longer run, and showed the following on screen;
+I then fixed the errors in my app.py file, and although when I saved, everything was working fine locally, but when I commited and pushed the code, the app would no longer run, and showed the following on screen;
 
 ![](assets/images/pep8herokubug3.jpg)
 
-To test, I navigated to my heroku dashboard, and in the logs was the following;
+To investigate, I navigated to my heroku dashboard, and in the logs was the following;
 
 ![](assets/images/pep8herokubug4.jpg)
 
-After speaking with my mentor Antonio, his advice was to return the code into the app.py that was running the 2 errors displaying in the PEP8 validator, and to flag the issue as a bug. To reiterise, you will see these errors on the validator; when I correct them locally it works ok, but when I push to heroku, it says invalid syntax. It is a format error that I tried to solve which I am flagging as a bug.
+After speaking with my mentor Antonio, his advice was to return the code into the app.py that was running the 2 errors displaying in the PEP8 validator, and to flag the issue as a bug. To clarify, you will see these errors on the validator; when I correct them locally it works fine, but when I push to heroku, it says invalid syntax. It is a format error that I tried to solve which I am flagging as a bug.
 
 # 5. Deployment
 
